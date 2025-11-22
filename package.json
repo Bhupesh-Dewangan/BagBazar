@@ -1,0 +1,29 @@
+{
+  "name": "bagbazar",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/Bhupesh-Dewangan/BagBazar#readme",
+  "bugs": {
+    "url": "https://github.com/Bhupesh-Dewangan/BagBazar/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bhupesh-Dewangan/BagBazar.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "cookie-parser": "^1.4.7",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^9.0.0",
+    "multer": "^2.0.2",
+    "nodemon": "^3.1.11"
+  }
+}
