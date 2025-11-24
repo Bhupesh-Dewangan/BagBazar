@@ -7,6 +7,7 @@ mongoose
   .then(() => {
     // console.log("ho gya hai...");
     dbgr("MongoDB connected successfully");
+    console.log("MongoDB connected successfully");
   })
   .catch((err) => {
     // console.log("error aa gya hai...");
