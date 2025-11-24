@@ -1,12 +1,16 @@
 const mongoose = require("mongoose");
+const config = require("config");
+const dbgr = require("debug")("development:mongoose");
 
 mongoose
-  .connect("mongodb://127.0.0.1:27017/bagbazar")
+  .connect(`${config.get("MONGODB_URL")}/bagbazar`)
   .then(() => {
-    console.log("MongoDB connected successfully");
+    // console.log("ho gya hai...");
+    dbgr("MongoDB connected successfully");
   })
   .catch((err) => {
-    console.error("MongoDB connection error:", err);
+    // console.log("error aa gya hai...");
+    dbgr("MongoDB connection error:", err);
   });
 
-  module.exports = mongoose.connection;
+module.exports = mongoose.connection;
